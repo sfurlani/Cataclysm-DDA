@@ -323,7 +323,7 @@ ifeq ($(shell git rev-parse --is-inside-work-tree),true)
   DEFINES += -DGIT_VERSION
 endif
 
-PKG_CONFIG = $(CROSS)pkg-config
+PKG_CONFIG = /usr/local/bin/pkg-config
 SDL2_CONFIG = $(CROSS)sdl2-config
 
 ifdef SOUND
